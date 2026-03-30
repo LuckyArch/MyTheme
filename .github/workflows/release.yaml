@@ -44,7 +44,8 @@ jobs:
       - name: Create release archive
         run: |
           rm -rf node_modules tests CODE_OF_CONDUCT.md CONTRIBUTING.md flake.lock flake.nix phpunit.xml shell.nix
-          tar --exclude="./.git" --exclude="./.github" --exclude="./panel.tar.gz" -czf panel.tar.gz .
+          tar --exclude="./.git" --exclude="./.github" -czf ../panel.tar.gz .
+          mv ../panel.tar.gz ./
 
       - name: Extract changelog
         env:
