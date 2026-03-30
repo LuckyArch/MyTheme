@@ -38,8 +38,8 @@ jobs:
           git push -u origin "$BRANCH"
           sed -i "s/    'version' => 'canary',/    'version' => '${REF:11}',/" config/app.php
           git add config/app.php
-          git commit -m 'ci(release): bump version'
-          git push
+          git commit -m 'ci(release): bump version' || echo "No version bump needed"
+          git push || echo "Nothing to push"
 
       - name: Create release archive
         run: |
