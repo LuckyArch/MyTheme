@@ -17,7 +17,7 @@ const RightNavigation = styled.div`
     & > a,
     & > button,
     & > .navigation-link {
-        ${tw`flex items-center h-full no-underline text-neutral-300 px-6 cursor-pointer transition-all duration-150`};
+        ${tw`flex items-center h-full no-underline text-neutral-300 px-3 sm:px-6 cursor-pointer transition-all duration-150`};
 
         &:active,
         &:hover {
@@ -64,7 +64,7 @@ export default () => {
     };
 
     return (
-        <div className={'bg-black/40 backdrop-blur-md shadow-md overflow-x-auto topbar border-b border-white/10'}>
+        <div className={'bg-black/40 backdrop-blur-md shadow-md topbar border-b border-white/10'}>
             <SpinnerOverlay visible={isLoggingOut} />
             <div className={'mx-auto w-full flex items-center h-[3.5rem] max-w-[1200px]'}>
                 {showSidebar && (

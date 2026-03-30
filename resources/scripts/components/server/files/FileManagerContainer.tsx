@@ -77,10 +77,10 @@ export default () => {
                         <div className={style.manager_actions}>
                             <FileManagerStatus />
                             <NewDirectoryButton />
-                            <UploadButton />
                             <NavLink to={`/server/${id}/files/new${window.location.hash}`}>
-                                <Button>New File</Button>
+                                <Button className={'!bg-violet-600 hover:!bg-violet-500 !border-violet-700 !shadow-[0_0_15px_rgba(139,92,246,0.5)]'}>New File</Button>
                             </NavLink>
+                            <UploadButton className={'!bg-violet-600 hover:!bg-violet-500 !border-violet-700 !shadow-[0_0_15px_rgba(139,92,246,0.5)]'} />
                         </div>
                     </Can>
                 </div>
