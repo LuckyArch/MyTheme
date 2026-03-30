@@ -5,7 +5,7 @@ export default createGlobalStyle`
     body {
         ${tw`font-sans bg-neutral-800 text-neutral-200`};
         letter-spacing: 0.015em;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/bg-image.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/bg-image.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;

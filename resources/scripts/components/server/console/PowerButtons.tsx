@@ -50,25 +50,25 @@ export default ({ className }: PowerButtonProps) => {
             </Dialog.Confirm>
             <Can action={'control.start'}>
                 <Button
-                    className={'flex-1'}
+                    className={'flex-1 !bg-blue-600/80 hover:!bg-blue-500/90 !backdrop-blur-sm border border-blue-400/50 shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:shadow-[0_0_20px_rgba(59,130,246,0.6)] transition-all duration-300 rounded-xl font-bold uppercase tracking-wider'}
                     disabled={status !== 'offline'}
                     onClick={onButtonClick.bind(this, 'start')}
                 >
-                    Start
+                    Jalankan
                 </Button>
             </Can>
             <Can action={'control.restart'}>
-                <Button.Text className={'flex-1'} disabled={!status} onClick={onButtonClick.bind(this, 'restart')}>
-                    Restart
+                <Button.Text className={'flex-1 !bg-white/10 hover:!bg-white/20 !backdrop-blur-sm border border-white/20 shadow-[0_0_15px_rgba(255,255,255,0.1)] hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 rounded-xl font-bold uppercase tracking-wider'} disabled={!status} onClick={onButtonClick.bind(this, 'restart')}>
+                    Ulangi
                 </Button.Text>
             </Can>
             <Can action={'control.stop'}>
                 <Button.Danger
-                    className={'flex-1'}
+                    className={'flex-1 !bg-red-600/80 hover:!bg-red-500/90 !backdrop-blur-sm border border-red-400/50 shadow-[0_0_15px_rgba(220,38,38,0.4)] hover:shadow-[0_0_20px_rgba(239,68,68,0.6)] transition-all duration-300 rounded-xl font-bold uppercase tracking-wider'}
                     disabled={status === 'offline'}
                     onClick={onButtonClick.bind(this, killable ? 'kill' : 'stop')}
                 >
-                    {killable ? 'Kill' : 'Stop'}
+                    {killable ? 'Matikan paksa' : 'Matikan'}
                 </Button.Danger>
             </Can>
         </div>

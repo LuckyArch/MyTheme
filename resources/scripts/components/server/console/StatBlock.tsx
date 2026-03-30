@@ -20,9 +20,9 @@ export default ({ title, copyOnClick, icon, color, className, children }: StatBl
 
     return (
         <CopyOnClick text={copyOnClick}>
-            <div className={classNames(styles.stat_block, 'bg-gray-800', className)}>
-                <div className={classNames(styles.status_bar, 'bg-gray-700')} />
-                <div className={classNames(styles.icon, 'bg-gray-900')}>
+            <div className={classNames(styles.stat_block, 'bg-black/30 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-xl overflow-visible transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:bg-black/40', className)}>
+                <div className={classNames(styles.status_bar, 'bg-white/10 backdrop-blur-sm')} />
+                <div className={classNames(styles.icon, 'bg-white/10 backdrop-blur-md border border-white/5 shadow-inner')}>
                     <Icon
                         icon={icon}
                         className={classNames({

@@ -21,7 +21,7 @@ import 'xterm/css/xterm.css';
 import styles from './style.module.css';
 
 const theme = {
-    background: th`colors.black`.toString(),
+    background: 'rgba(0, 0, 0, 0.45)',
     cursor: 'transparent',
     black: th`colors.black`.toString(),
     red: '#E54B4B',

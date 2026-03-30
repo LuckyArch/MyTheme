@@ -43,15 +43,17 @@ const ServerConsoleContainer = () => {
                     </Can>
                 </div>
             </div>
-            <div className={'bg-neutral-700/80 backdrop-blur-md rounded-lg p-4 mb-4 shadow-lg border-l-4 border-blue-500 flex items-center'}>
-                <div className={'flex-shrink-0 bg-blue-500/20 p-2 rounded-full border border-blue-500/30 mr-4'}>
-                    <svg className={'w-6 h-6 text-blue-400'} fill={'none'} stroke={'currentColor'} viewBox={'0 0 24 24'} xmlns={'http://www.w3.org/2000/svg'}>
+            <div className={'bg-black/30 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] rounded-xl p-4 mb-6 transition-all duration-300 hover:bg-black/40 hover:shadow-[0_8px_32px_0_rgba(0,0,0,0.6)] flex items-center relative overflow-hidden'}>
+                <div className={'absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-violet-400 to-fuchsia-500 shadow-[0_0_12px_rgba(167,139,250,0.8)]'} />
+                
+                <div className={'flex-shrink-0 bg-white/10 backdrop-blur-md p-3 rounded-full border border-white/20 shadow-inner mr-5 ml-2 transition-transform duration-300 hover:rotate-12 hover:scale-110'}>
+                    <svg className={'w-6 h-6 text-violet-300 drop-shadow-[0_0_8px_rgba(196,181,253,0.8)]'} fill={'none'} stroke={'currentColor'} viewBox={'0 0 24 24'} xmlns={'http://www.w3.org/2000/svg'}>
                         <path strokeLinecap={'round'} strokeLinejoin={'round'} strokeWidth={2} d={'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'} />
                     </svg>
                 </div>
                 <div>
-                    <h2 className={'text-gray-50 font-bold text-base uppercase tracking-wide'}>INFORMATION</h2>
-                    <p className={'text-sm text-neutral-300 mt-0.5'}>Love you, jangan telegram: @zannroderizz</p>
+                    <h2 className={'text-gray-50 font-bold text-base uppercase tracking-wider drop-shadow-md'}>Zann Zinn ZUnn</h2>
+                    <p className={'text-sm text-neutral-200 mt-0.5'}>Hai hehe :b, gak tau gini bener apa enggak</p>
                 </div>
             </div>
             <div className={'grid grid-cols-4 gap-2 sm:gap-4 mb-4'}>

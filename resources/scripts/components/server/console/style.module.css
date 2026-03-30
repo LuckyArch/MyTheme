@@ -31,7 +31,8 @@
     }
 
     & > .container {
-        @apply rounded-t p-1 sm:p-2 bg-black min-h-[16rem] flex-1 font-mono text-sm;
+        @apply p-1 sm:p-2 bg-black/40 backdrop-blur-md border border-white/10 min-h-[16rem] flex-1 font-mono text-sm shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+        @apply rounded-t-xl;
 
         & #terminal {
             @apply h-full;
@@ -51,13 +52,14 @@
     }
 
     & .command_input {
-        @apply relative bg-gray-900 px-2 text-gray-100 pl-10 pr-4 py-2 w-full font-mono text-sm sm:rounded-b;
+        @apply relative bg-black/50 backdrop-blur-md border border-white/10 px-2 text-gray-100 pl-10 pr-4 py-2 w-full font-mono text-sm sm:rounded-b-xl;
         @apply focus:ring-0 outline-none focus-visible:outline-none;
-        @apply border-0 border-b-2 border-transparent transition-colors duration-100;
-        @apply active:border-cyan-500 focus:border-cyan-500;
+        @apply border-t-0 shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-colors duration-100;
+        @apply focus:bg-black/70 focus:border-cyan-500/50;
     }
 }
 
 .chart_container {
-    @apply rounded shadow-lg pt-2 relative bg-gray-800;
+    @apply rounded-xl pt-2 relative bg-black/30 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+    @apply transition-all duration-300 hover:bg-black/40 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(0,0,0,0.2)];
 }
